@@ -6,12 +6,7 @@ VER=$(shell lsb_release -sr)
 # - specifically for Ubuntu 16 - path to qmake post installation
 
 # tools
-ifeq ($(OS),Ubuntu)
-  QMAKE                         := qmake
-else
-  # GDR - why would this be path-specific anyway?
-  QMAKE                         := /opt/QtSDK/Desktop/Qt/473/gcc/bin/qmake
-endif
+QMAKE                         := qmake
 # << GDR - 20180617.01
 
 MAKE                          := make
